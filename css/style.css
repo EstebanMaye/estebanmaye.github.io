@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    color: rgb(97, 97, 106);
 }
 
 /* Conteneur pour les images de fond */
@@ -373,7 +374,7 @@ body {
 
 .custom-title-role {
     font-size: 1em; /* Ajustez la taille de la police selon vos préférences */
-    color: #29ABE2; /* Couleur blanche */
+    color: #00d1f9; /* Couleur blanche */
     margin-top: 0; /* Espace sous le texte */
 	margin-left: 0;
     opacity: 0; /* Rendre le texte invisible avant l'animation */
@@ -526,9 +527,9 @@ body {
     padding-left: 500px;
     display: flex;
     align-items: center;
-    justify-content: justify;
+    justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6));
     background-size: cover;
 }
 
@@ -1310,4 +1311,9 @@ body {
         font-size: 30px;
         font-weight: bold;
         cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+    }
+
+
+    .feature-item:hover .feature-icon i {
+        transform: rotate(360deg); /* Réutilise les animations existantes */
     }
