@@ -368,7 +368,6 @@ body {
 	margin-left: 0;
     opacity: 0; /* Rendre le texte invisible avant l'animation */
     animation: fadeInLeft 2s ease-out forwards; /* Utilise l'animation fadeInLeft */
-    animation-delay: 2s; /* Délai de l'animation */
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -379,7 +378,6 @@ body {
 	margin-left: 0;
     opacity: 0; /* Rendre le texte invisible avant l'animation */
     animation: fadeInLeft 2s ease-out forwards; /* Utilise l'animation fadeInLeft */
-    animation-delay: 2s; /* Délai de l'animation */
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -459,8 +457,6 @@ body {
     }
 
 
-
-
 .carousel-header {
     position: relative;
     width: 100vw;
@@ -535,6 +531,7 @@ body {
 
 .carousel-caption-1-content, .carousel-caption-2-content {
     margin-top: 3rem; /* Centre les contenus dans la zone de la caption */
+    padding-right: 8rem;
 }
 
 .carousel-caption-1-content {
@@ -946,7 +943,7 @@ body {
             display: inline-block;
 			font-weight:bold;
 			color:#00d1f9;
-			cursor: pointer; /* Affiche la petite main */
+			cursor:default; /* Affiche la petite main */
         }
 
         .definition {
@@ -1255,6 +1252,24 @@ body {
         opacity: 0;
         transition: opacity 0.3s ease;
         border-radius: 10px; /* To match rounded corners */
+    }
+    
+    .photo1, .photo2 {
+        transition: opacity 0.5s ease;
+    }
+    
+    .photo2 {
+        position: absolute;
+        margin-left: -18rem;
+        opacity: 0;
+    }
+    
+    .image-container:hover .photo1 {
+        opacity: 0;
+    }
+    
+    .image-container:hover .photo2 {
+        opacity: 1;
     }
     
     /* Text styling */

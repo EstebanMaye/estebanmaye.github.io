@@ -54,8 +54,7 @@
                         <a id="goToSimulation" class="nav-item nav-link" style="cursor:pointer">Simulation</a>
                         <a id="goToMaintenance" class="nav-item nav-link" style="cursor:pointer">Maintenance et Logistique</a>
                     </div>
-                    <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Mon CV</a>
-
+                    <a href="CV_Esteban_Maye_fr.pdf" download target="_blank" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Mon CV</a>
                     <p class="d-inline-flex language-switch" style="font-size: 17px; margin: 0; margin-left: 40px;">
                         <span class="language-fr">FR</span> / 
                         <a href="" class="language-en text-decoration-none">EN</a>
@@ -74,14 +73,21 @@
                                 <div class="d-flex align-items-center" style="max-width: 900px;margin-top:4rem">
                                     <!-- Div pour la photo à gauche -->
                                     <div class="me-4">
-                                        <img src="img/photo.png" alt="Photo" 
-                                            class="fadeInLeft animated" 
-                                            data-animation="fadeInLeft" 
-                                            data-delay="2.5s" 
-                                            style="margin-bottom: 1rem;width: 18rem; height: auto; border-radius: 50%; border: 4px solid white; box-shadow: 12px 14px 18px rgba(0, 0, 0, 0.25); animation-delay: 2.5 s;">
+                                        <div class="image-container">
+                                            <a href="https://www.linkedin.com/in/esteban-maye/" target="_blank">
+                                            <img src="img/photo.png" alt="Photo" class="fadeInLeft animated photo1" data-animation="fadeInLeft" data-delay="2.5s" style="margin-bottom: 1rem;width: 18rem; height: auto; border-radius: 50%; border: 4px solid white; box-shadow: 12px 14px 18px rgba(0, 0, 0, 0.25); animation-delay: 2.5 s;">
+                                            <img src="img/photo2.jpg" alt="Photo" class="photo2" style="margin-bottom: 1rem;width: 18rem; height: auto; border-radius: 50%; border: 4px solid white; box-shadow: 12px 14px 18px rgba(0, 0, 0, 0.25);">
+                                            </a>
+                                        </div>    
                                         <div class="display-block">
-                                            <h1 class="custom-title-name" style="font-family: 'Open Sans', sans-serif;">Esteban MAYÉ</h1>
+                                            <h1 class="custom-title-name" style="font-family: 'Open Sans', sans-serif;">
+                                                <a href="https://www.linkedin.com/in/esteban-maye/" target="_blank" style="text-decoration: none; color: inherit;">
+                                                    Esteban MAYÉ
+                                                </a>
+                                            </h1>
                                             <h1 class="custom-title-role" style="font-family: 'Open Sans', sans-serif;">Étudiant ingénieur en génie industriel</h1>
+                                            <h1 class="custom-title-role" style="font-family: 'Open Sans', sans-serif;font-weight: lighter;color:white">📧 esteban.maye.contact@gmail.com</h1>
+                                            <h1 class="custom-title-role" style="font-family: 'Open Sans', sans-serif;font-weight: lighter;color:white">🕿 +33 7 85 81 21 05</h1>
                                         </div>
                                     </div>
 
@@ -444,7 +450,7 @@
                                 <span class="download-text">Télécharger le <span style="font-weight:bold;color:#0DD3F9;">classeur</span></span>
                             </div>
                             <video class="img-fluid rounded h-110 w-110" style="box-shadow: 0 0 45px rgba(0, 0, 0, .00);" autoplay muted loop>
-                                <source src="img/dashboard.mp4" type="video/mp4">
+                                <source src="img/dashboard2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </a>
@@ -554,7 +560,7 @@
                                 </div>
                                 <div class="video-wrapper" style="margin-right: 20rem;margin-left: 4rem;margin-bottom: 2rem;" onclick="openModal('video2')">
                                     <video class="img-fluid rounded" style="box-shadow: 0 0 45px rgba(0, 0, 0, .00);" autoplay muted loop>
-                                        <source src="img/simulation_discrete.mp4" type="video/mp4">
+                                        <source src="img/simulation_multi_agent2.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                     <div class="video-overlay">
@@ -625,8 +631,8 @@
         </div>
 
         <!-- Maintenance et Logistique -->
-        <section id="maintenanceSection"></section>
-        <div class="container-fluid about overflow-hidden" style="padding-top: 2rem;">
+        <section id="maintenanceSection" style="padding-top: 2rem;"></section>
+        <div class="container-fluid about overflow-hidden" style="padding-top: 2rem;" >
             <div class="container py-3">
                 <!-- Titre principal plus petit et bleu -->
                 <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.2s">
@@ -682,74 +688,105 @@
             <img src="img/puce.png" alt="ThemePark1" class="intercalaire" style="width:80%; justify-self: center;"/>
         </div>
 
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-uppercase text-primary">TÉMOIGNAGES</h4>
-                    <h1 class="display-3 text-capitalize mb-3">L'avis des professionnels</h1>
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial py-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">TÉMOIGNAGES</h4>
+            <h1 class="display-3 text-capitalize mb-3">L'avis des professionnels</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+            <div class="testimonial-item text-center p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
+                </p>
+                <div class="d-flex justify-content-center mb-4">
+                    <img src="img/damien-trentesaux.png" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
                 </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="testimonial-item text-center p-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
-                        </p>
-                        <div class="d-flex justify-content-center mb-4">
-                            <img src="img/damien-trentesaux.png" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
-                        </div>
-                        <div class="d-block">
-                            <h4 class="text-dark">Damien Trentesaux</h4>
-                            <p class="m-0">Deputy Director at LAMIH UMR CNRS 8201</p>
-                            <p class="m-0 pb-3">Lean Practioner</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center p-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
-                        </p>
-                        <div class="d-flex justify-content-center mb-4">
-                            <img src="img/sondes-chaabane.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
-                        </div>
-                        <div class="d-block">
-                            <h4 class="text-dark">Sondes Chaabane</h4>
-                            <p class="m-0 pb-3">Teacher Researcher at LAMIH UMR CNRS 8201</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center p-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
-                        </p>
-                        <div class="d-flex justify-content-center mb-4">
-                            <img src="img/julien-engloo.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
-                        </div>
-                        <div class="d-block">
-                            <h4 class="text-dark">Julien Engloo</h4>
-                            <p class="m-0">Responsable Technique et Réseaux, Viparis PDV</p>
-                            <p class="m-0 pb-3">INSA Engineer's degree, Industrial Engineering</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center p-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
-                        </p>
-                        <div class="d-flex justify-content-center mb-4">
-                            <img src="img/none.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
-                        </div>
-                        <div class="d-block">
-                            <h4 class="text-dark">Name</h4>
-                            <p class="m-0 pb-3">Profession</p>
-                        </div>
-                    </div>
+                <div class="d-block">
+                    <h4 class="text-dark" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="https://www.linkedin.com/in/damien-trentesaux-4751385/" target="_blank">
+                            <img src="img/linkedin-logo.png" alt="LinkedIn" style="width: 2rem; height: 2rem; margin-right: 5px;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/damien-trentesaux-4751385/" target="_blank" class="text-dark text-decoration-none">Damien Trentesaux</a>
+                    </h4>
+                    <p class="m-0">Deputy Director at LAMIH UMR CNRS 8201</p>
+                    <p class="m-0 pb-3">Lean Practitioner</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
+                </p>
+                <div class="d-flex justify-content-center mb-4">
+                    <img src="img/sondes-chaabane.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
+                </div>
+                <div class="d-block">
+                    <h4 class="text-dark" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="https://www.linkedin.com/in/sondes-chaabane-921622b/" target="_blank">
+                            <img src="img/linkedin-logo.png" alt="LinkedIn" style="width: 2rem; height: 2rem; margin-right: 5px;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/sondes-chaabane-921622b/" target="_blank" class="text-dark text-decoration-none">Sondes Chaabane</a>
+                    </h4>
+                    <p class="m-0 pb-3">Teacher Researcher at LAMIH UMR CNRS 8201</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
+                </p>
+                <div class="d-flex justify-content-center mb-4">
+                    <img src="img/julien-engloo.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
+                </div>
+                <div class="d-block">
+                    <h4 class="text-dark" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="https://www.linkedin.com/in/julien-engloo" target="_blank">
+                            <img src="img/linkedin-logo.png" alt="LinkedIn" style="width: 2rem; height: 2rem; margin-right: 5px;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/julien-engloo" target="_blank" class="text-dark text-decoration-none">Julien Engloo</a>
+                    </h4>
+                    <p class="m-0">Responsable Technique et Réseaux, Viparis PDV</p>
+                    <p class="m-0 pb-3">INSA Engineer's degree, Industrial Engineering</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center p-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
+                </p>
+                <div class="d-flex justify-content-center mb-4">
+                    <img src="img/none.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
+                </div>
+                <div class="d-block">
+                    <h4 class="text-dark" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="#" target="_blank">
+                            <img src="img/linkedin-logo.png" alt="LinkedIn" style="width: 2rem; height: 2rem; margin-right: 5px;">
+                        </a>
+                        <a href="#" target="_blank" class="text-dark text-decoration-none">Name</a>
+                    </h4>
+                    <p class="m-0 pb-3">Profession</p>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+
 
         <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
             <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                <div class="row g-4">
+                    <div class="col-md-1 display-block">
+                        <span class="text-body">Contact :</span>
                     </div>
-                    <div class="col-md-6 text-center text-md-end text-body">
-                        Designed By <a class="border-bottom text-white">Esteban Mayé</a>
+                    <div class="col-md-7 display-block">
+                        <a href="https://www.linkedin.com/in/esteban-maye/" target="_blank" class="custom-title-role" style="font-family: 'Open Sans', sans-serif;font-weight: bold;color:white">Esteban MAYÉ</a>
+                        <h1 class="custom-title-role" style="font-family: 'Open Sans', sans-serif;font-weight: lighter;color:white">Génie industriel / INSA Hauts de France (Valenciennes)</h1>
+                        <h1 class="custom-title-role" style="font-family: 'Open Sans', sans-serif;font-weight: lighter;color:white">📧 esteban.maye.contact@gmail.com</h1>
+                        <h1 class="custom-title-role" style="font-family: 'Open Sans', sans-serif;font-weight: lighter;color:white">🕿 +33 7 85 81 21 05</h1>
+                    </div>
+                    <div class="col-md-4 text-center text-md-start text-body">
+                        <span class="text-body"><i class="fas fa-copyright text-light me-2"></i><a href="#" class="border-bottom text-white">estebanmayeparkproject.github.io</a> , All right reserved.</span>
+                        <br>
+                        Designed By <a class="text-white">Esteban Mayé</a>
                     </div>
                 </div>
             </div>
