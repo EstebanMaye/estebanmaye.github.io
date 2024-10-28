@@ -934,6 +934,28 @@ body {
 }
 /*** copyright end ***/
 
+.button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom:1rem;
+    background-color: #00d1f9; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button-style:hover {
+    background-color: #00376e; /* Couleur au survol */
+}
+
+.button-style p {
+    margin: 0; /* Supprime les marges autour du texte pour un style plus uniforme */
+}
 
 
 
@@ -1009,13 +1031,13 @@ body {
 
 .image-overlay {
     position: absolute;
-    top: -8rem; /* Ajustez selon votre besoin */
+    top: -7rem; /* Ajustez selon votre besoin */
     left: 0rem; /* Ajustez selon votre besoin */
 	z-index:1;
 }
 .image-overlay2 {
     position: absolute;
-    top: -10rem; /* Ajustez selon votre besoin */
+    top: -11rem; /* Ajustez selon votre besoin */
     left: -35rem; /* Ajustez selon votre besoin */
 	z-index:1;
 }
