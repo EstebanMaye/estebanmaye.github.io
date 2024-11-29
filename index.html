@@ -30,6 +30,12 @@
     </head>
 
     <body>
+        <div id="mobile-warning" class="popup">
+            <div class="popup-content">
+                <p>This website is not optimized for phones, the display is intended for computers.</p>
+                <button id="close-popup">OK</button>
+            </div>
+        </div>
 	    <div class="background-container"></div>
         <a id="top"></a>
 
@@ -864,6 +870,21 @@
 
         // Initialisez la visibilité du bouton en fonction de la position actuelle de défilement
         toggleBackToTopButton();
+
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        if (isMobileDevice()) {
+            var popup = document.getElementById('mobile-warning');
+            var closeButton = document.getElementById('close-popup');
+
+            popup.style.display = 'flex';
+
+            closeButton.addEventListener('click', function () {
+                popup.style.display = 'none';
+            });
+        }
 
 
     document.getElementById('goToAmelioration').addEventListener('click', function() {
