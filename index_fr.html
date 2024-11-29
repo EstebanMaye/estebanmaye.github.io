@@ -113,6 +113,13 @@
         </div>
         <!-- Navbar & Hero End -->
 
+        <div id="mobile-warning" class="popup">
+            <div class="popup-content">
+                <p>Ce site web n'est pas optimisé pour les téléphones, l'affichage est prévu pour ordinateur.</p>
+                <button id="close-popup">OK</button>
+            </div>
+        </div>
+
 		<!-- Amélioration continue et Lean management Start-->
 		<section id="ameliorationSection"></section>
         <div class="container-fluid feature" style="margin-top:5rem">
@@ -840,6 +847,8 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <!-- Template Javascript -->
         <script>
+
+            
         
         function toggleContent() {
     var content = document.getElementById('foldableContent');
@@ -895,6 +904,21 @@
 
         // Initialisez la visibilité du bouton en fonction de la position actuelle de défilement
         toggleBackToTopButton();
+
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        if (isMobileDevice()) {
+            var popup = document.getElementById('mobile-warning');
+            var closeButton = document.getElementById('close-popup');
+
+            popup.style.display = 'flex';
+
+            closeButton.addEventListener('click', function () {
+                popup.style.display = 'none';
+            });
+        }
 
 
     document.getElementById('goToAmelioration').addEventListener('click', function() {
